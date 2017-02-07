@@ -1,0 +1,46 @@
+The csv contains trajectories of 100 projectiles launched at different angles and velocities. The projectiles are of unit mass and are launched from origin (0,0). Their displacement is recorded every 100ms interval. Effect of air friction is ignored and gravity is 9.8 m/s2. The data is in the following format:
+
+```
+[time_index] , [x] , [y]
+0 , 0.0 , 0.0        # projectile 1
+.
+.
+.
+0 , 0.0 , 0.0        # projectile 2
+.
+.
+.
+0 , 0.0 , 0.0        # projectile 100
+.
+.
+.
+```
+
+Q1 : Your objective is to use this data to learn how a projectile behaves. You can use your favorite machine learning algorithm, language, or framework for this purpose. 
+
+With the help of your model, predict the trajectory of a projectile launched at 45 degrees with an initial velocity of 10 m/s till it hits the ground or time_index=100 whichever is earlier. You can assume the initial two points in the trajectory to be :
+```
+0 ,0.0 ,0.0
+1 ,0.707106781187 ,0.658106781187
+```
+
+Use your model to predict the rest. 
+
+You will need to submit two artifacts for this question:
+A1.    Just like in the data file, report the horizontal and vertical displacement (x,y) at every 100ms intervals in the following format :
+```
+[time_index] , [x] , [y] 
+0 ,0.0 ,0.0
+1 ,0.707106781187 ,0.658106781187
+2 ,1.41421356237 ,1.21821356237
+3 ,2.12132034356 ,1.68032034356
+.
+.
+```
+A2.    A link to github/bitbucket where we can look at the code you developed. Don’t worry too much about coding standards at this point. Having simple descriptive comments are enough. However, we should be able to run the code to generate A1. Please add clear instructions / readme file on how to run.
+
+
+Q2 : Write a short report discussing the following :
+    What made you choose this specific model? Is your model well suited to the learning objective? How would you evaluate your model? Can your model predict projectiles launched at arbitrary angles and velocities equally well (or badly)? What assumptions does your model make? Will your approach/model change if we hadn’t told you that the data was from a projectile? Did you refer to any relevant literature while solving this problem? If you were given enough time, how would you improve the model?
+
+Remember, the problem is somewhat open-ended, and the evaluation will put greater emphasis on your approach to solving it, rather than the sheer accuracy of your model. There is no specific page limit; one or two pages are reasonable. Consider using graphics to visualize your results.
